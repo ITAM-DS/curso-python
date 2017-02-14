@@ -1,0 +1,41 @@
+posicion, nombre, valor, color
+0, México, 20000, -
+1, Canadá, 5000, rojo
+2, EE.UU., 6000, rojo
+3, Visas, 10000, -
+4, Costa Rica, 8000, rojo
+5, Línea Aérea Americana, 20000, aeropuertos
+6, Venezuela, 12000, morado
+7, Argentina, 15000, morado
+8, Carta, 0, comunicaciones
+9, Brasil, 18000, morado
+10, Deportado, 0, -
+11, España, 15000, verde
+12, Italia, 18000, verde
+13, Embajada, 15000, diplomáticos
+14, Francia, 20000, verde
+15, Línea Aérea Europea, 20000, aeropuertos
+16, Inglaterra, 18000, naranja
+17, Telegrama, 0, comunicaciones
+18, Alemania, 20000, naranja
+19, Holanda, 22000, naranja
+20, Oceanía, 0, -
+21, U.R.S.S., 27000, azul
+22, India, 20000, azul
+23, Carta, 0, comunicaciones
+24, Israel, 25000, azul
+25, Línea Aérea Asiática, 20000, aeropuertos
+26, China, 27000, rosa
+27, Japón, 25000, rosa
+28, Aduana, 0, *
+29, Hawaii, 27000, rosa
+30, Groenlandia, -5000, -
+31, Egipto, 25000, café
+32, Consulado, 15000, diplomáticos
+33, Nigeria, 27000, café
+34, Túnez, 30000, café
+35, Línea Aérea Africana, 20000, aeropuertos
+36, Etiopía, 30000, amarillo
+37, Telegrama, 0, comunicaciones
+38, Argelia, 32000, amarillo
+39, Marruecos, 35000, amarillo

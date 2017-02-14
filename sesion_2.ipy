@@ -1,0 +1,204 @@
+# coding: utf-8
+from collections import Counter
+from  collections import defaultdict
+lista = 'aaaaaaabbbcccc'
+for caracter in lista;
+for caracter in lista:
+    print(caracter)
+    
+lista
+Counter(lista)
+contador = Counter(lista)
+contador['a']
+diccionario = {}
+diccionario['a'] 
+d = defaultdict(list)
+d['monterrey'] = 24
+d['cdmx'] = 12
+d
+d['cdmx'].append(13)
+d['cdmx'] = 14
+d
+d['monterrey'] = [24]
+d['cdmx'] = [14]
+d['cdmx'].append(25)
+d
+d['cdmx']
+d['cdmx'].sum()
+sum(d['cdmx'])
+x = 3
+x
+tyepe(x)
+type(x)
+x = 'adolfo'
+type(x)
+lista = [3, '3']
+import numpy as np
+arreglo = np.array([1,2,3,4,5])
+arreglo
+arreglo[0]
+arreglo.dtype.name
+arreglo = np.array([1,2,3,4,5.0])
+arreglo
+arreglo.dtype.name
+arreglo.shape
+arreglo.sum()
+arreglo.mean()
+arreglo.maz()
+arreglo.max()
+arreglo.shape
+arreglo[1]
+arreglo
+arreglo[3:]
+arreglo[:3]
+# slicing: arreglo[start:end:step]
+arreglo[2:4]
+arreglo[1:4]
+arreglo[0:4]
+arreglo[0:4:2]
+arreglo[::2]
+arreglo[:]
+# Fancy Indexing
+indices = [1,2,3]
+arreglo[indices]
+arreglo + 1
+arreglo * 2
+arreglo % 2
+arreglo % 2 == 0
+arreglo[arreglo % 2 == 0]
+np.sum(arreglo % 2 == 0)
+np.sum(arreglo)
+arreglo.sum()
+np.random.rand()
+np.arange(6)
+np.zeros(6)
+np.ones(5)
+np.ones(6).reshape(2,3)
+np.ones(6).reshape(2,3).shape
+arreglo
+arreglo
+arreglo.shape
+arreglo[:, np.newaxis]
+arreglo[:, np.newaxis].shape
+arreglo[np.newaxis, :].shape
+arreglo[np.newaxis, :]
+a2 = arreglo[np.newaxis, :]
+a1 = arreglo[np.newaxis, :]
+a2
+a1
+a1 = arreglo[:, np.newaxis]
+a1
+a2
+a1.dot(a2)
+arreglo.shape
+arreglo.dot(arreglo)
+dado = np.arange(1,7) # Un dado tiene 6 caras
+dado
+?np.random.choice
+?np.random.choice
+np.random.choice(dado)
+np.random.choice(dado)
+np.random.choice(dado)
+np.random.choice(dado)
+np.random.choice(dado)
+np.random.choice(dado) # Tirar el dado
+?np.random.choice
+np.random(dado, size=2)
+np.random.choice(dado, size=2)
+np.random.choice(dado, size=2)
+np.random.choice(dado, size=2)
+np.random.choice(dado, size=2)
+np.random.choice(dado, size=2)
+?np.random.choice
+np.random.choice(dado, size=2, replace=True)
+[np.random.choice(dado) for x in  range(3)]
+Counter([np.random.choice(dado) for x in  range(3)])
+Counter([np.random.choice(dado) for x in  range(30)])
+Counter([np.random.choice(dado) for x in  range(1000)])
+Counter([np.random.choice(dado) for x in  range(10000)])
+sums, counts = np.uni}}que( [roll(weight=[1/8, 1/8, 1/8, 1/8,1/8, 3/8]) for x in range(10000)], return_counts=True)
+np.unique([np.random.choice(dado) for x in range(10)], return_counts=True)
+tiro, conteo = np.unique([np.random.choice(dado) for x in range(10)], return_counts=True)
+tiro
+conteo
+%matplotlib
+plt.bar(tiro, conteo, width=1)
+import matplotlib.pyplot as plt
+plt.bar(tiro, conteo, width=1)
+plt.xticks(tiro + width + 0.5, tiro)
+plt.xticks(tiro + 1 + 0.5, tiro)
+plt.xticks(tiro + 0.5, tiro)
+tiro, conteo = np.unique([np.random.choice(dado) for x in range(10000)], return_counts=True)
+plt.bar(tiro, conteo, width=1)
+plt.xticks(tiro + 0.5, tiro)
+def roll():
+    dado = np.arange(1, 7)
+    dados = np.random.choice(dado, size=2, return=True)
+def roll():
+    dado = np.arange(1, 7)
+    dados = np.random.choice(dado, size=2, replace=True)
+    return dados.sum()
+roll()
+roll()
+roll()
+roll()
+roll()
+roll()
+roll()
+# Primera tarea: graficar 10000 tiros de dos dados y comprobar que es normal la distribución
+# Segunda tarea: Crear una función que reciba los tiros y el conteo y genere un histograma con los ticks centrados. Repita la tarea 1
+
+class Turista:
+    def __init__(self): 
+        self.jugadores = { 'p'+str(x+1):0 for x in range(4) }
+        self.contador = Counter()
+    def turno(self):
+        for jugador, posicion in self.jugadores.items():
+            posicion = (posicion + roll())%40
+            self.jugadores[jugador] = posicion
+            self.contador[posicion] += 1
+            
+juego = Turista()
+juego.jugadores
+juego.contador
+juego.turno()
+juego.jugadores
+juego.contador
+for turno in range(1000):
+    juego.turno()
+    
+juego.jugadores
+juego.contador
+# Tarea: Genera el histograma de las casillas del juego de Turista
+!cat paises.csv
+# Leer el archivo paises.csv
+with open('paises.csv', 'r') as paises:
+    for pais in paises:
+        print(pais)
+        
+from  collections import namedtuple
+(1,2,3)
+tupla = (1,2,3)
+tupla[1]
+País = namedtuple('País', ['posicion', 'nombre', 'valor', 'color'])
+País
+Mexico = País(0, 'México', 20000, '-')
+Mexico[1]
+Mexico.nombre
+paises = []
+with open('paises.csv', 'r') as paises:
+    for pais in paises:
+        países.append(País(*[x.strip() for x in pais.split(',')]))
+        
+países = []
+with open('paises.csv', 'r') as paises:
+    for pais in paises:
+        países.append(País(*[x.strip() for x in pais.split(',')]))
+        
+"hola, adolfo".split(',')
+!head paises.csv
+' adolfo     '.strip()
+países
+juego.jugadores
+países[17]
+%save -r sesion_21_octubre_b_2016 1-175
