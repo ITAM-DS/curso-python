@@ -90,6 +90,5 @@ class Turista:
 
 if __name__ == "__main__":
     for num_partida in range(1,NUM_PARTIDAS):
-        print("Hola")
         juego = Turista()
         juego.partida(num_partida)
