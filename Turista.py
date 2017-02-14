@@ -4,10 +4,13 @@ from collections import Counter
 
 import numpy as np
 
+import config_ini
+
 import logging
 import logging.config
-logging.config.fileConfig('turista-logging.conf')
 logger = logging.getLogger('turista')
+
+NUM_PARTIDAS=100
 
 class Jugador:
     def __init__(self, nombre, cantidad_inicial):
@@ -86,6 +89,7 @@ class Turista:
 
 
 if __name__ == "__main__":
-    for num_partida in range(1,100):
+    for num_partida in range(1,NUM_PARTIDAS):
+        print("Hola")
         juego = Turista()
         juego.partida(num_partida)
